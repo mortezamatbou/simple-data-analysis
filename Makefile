@@ -6,6 +6,8 @@ PROJECT_NAME = simple-data-analysis
 PYTHON_VERSION = 3.10
 PYTHON_INTERPRETER = python
 
+DATA_VERSION = 1
+
 #################################################################################
 # COMMANDS                                                                      #
 #################################################################################
@@ -62,7 +64,7 @@ data: requirements
 
 .PHONY: to-csv
 to-csv:
-	$(PYTHON_INTERPRETER) simple_data_analysis/dataset.py to-csv
+	$(PYTHON_INTERPRETER) simple_data_analysis/dataset.py to-csv --vr $(DATA_VERSION)
 
 
 #################################################################################
