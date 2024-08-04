@@ -1,0 +1,20 @@
+services:
+
+  db:
+    image: mariadb:11.4
+    ports:
+      - "${DB_MACHINE_PORT}:3306"
+    environment:
+      - MARIADB_ALLOW_EMPTY_PASSWORD=true
+      - MARIADB_DATABASE=${DB_DATABASE}
+      - MARIADB_USER=${DB_USERNAME}
+      - MARIADB_PASSWORD=${DB_PASSWORD}
+      - MARIADB_ROOT_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - "./docker-volume/mariadb:/var/lib/mysql"
+      - "./chinook.sql:/docker-entrypoint-initdb.d/init.sql"
+    networks:
+      - test
+
+networks:
+  test: {}
