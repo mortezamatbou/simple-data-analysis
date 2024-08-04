@@ -115,11 +115,12 @@ scipy==1.14.0
 seaborn==0.13.2
 Send2Trash==1.8.3
 shellingham==1.5.4
--e git+ssh://git@github.com/mortezamatbou/simple-data-analysis.git@ef9884993e17a2504f065de68eb9b7e0c0ddd58a#egg=simple_data_analysis
+-e git+ssh://git@github.com/mortezamatbou/simple-data-analysis.git@d968dc8808a84a30970658ef7e9401c0b03ab4ee#egg=simple_data_analysis
 six==1.16.0
 sniffio==1.3.1
 soupsieve==2.5
 stack-data==0.6.3
+tabulate==0.9.0
 terminado==0.18.1
 threadpoolctl==3.5.0
 tinycss2==1.3.0
