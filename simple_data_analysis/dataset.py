@@ -5,6 +5,7 @@ from loguru import logger
 from tqdm import tqdm
 
 from simple_data_analysis.config import PROCESSED_DATA_DIR, RAW_DATA_DIR
+import db as db
 
 app = typer.Typer()
 
@@ -24,6 +25,9 @@ def main(
     logger.success("Processing dataset complete.")
     # -----------------------------------------
 
+@app.command()
+def to_csv():
+    print("Test database connectivity")
 
 if __name__ == "__main__":
     app()

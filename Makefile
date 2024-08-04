@@ -60,6 +60,10 @@ create_environment:
 data: requirements
 	$(PYTHON_INTERPRETER) simple_data_analysis/dataset.py
 
+.PHONY: to-csv
+to-csv:
+	$(PYTHON_INTERPRETER) simple_data_analysis/dataset.py to-csv
+
 
 #################################################################################
 # Self Documenting Commands                                                     #

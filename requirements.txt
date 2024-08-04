@@ -68,6 +68,7 @@ mistune==3.0.2
 mkdocs==1.6.0
 mkdocs-get-deps==0.2.0
 mypy-extensions==1.0.0
+mysql-connector-python==8.4.0
 nbclient==0.10.0
 nbconvert==7.16.4
 nbformat==5.10.4

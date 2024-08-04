@@ -13,8 +13,4 @@ services:
     volumes:
       - "./docker-volume/mariadb:/var/lib/mysql"
       - "./chinook.sql:/docker-entrypoint-initdb.d/init.sql"
-    networks:
-      - test
 
-networks:
-  test: {}
