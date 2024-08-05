@@ -82,7 +82,7 @@ def to_csv(vr: int = 1):
         db.db.execute(sql)
         result = db.db.fetchall()
         df = pd.DataFrame(result)
-        df.to_csv(dir / f"{table}.csv")
+        df.to_csv(dir / f"{table}.csv", index=False)
     
     print("Tables loaded successfully in ", dir)
 
